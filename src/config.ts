@@ -14,6 +14,7 @@ export interface Config {
   openai: {
     apiKey: string;
     model: string;
+    voiceId: string;
   };
   video: {
     tempDir: string;
@@ -41,6 +42,7 @@ export const config: Config = {
   openai: {
     apiKey: process.env.OPENAI_API_KEY || '',
     model: process.env.OPENAI_MODEL || 'gpt-4-vision-preview',
+    voiceId: process.env.VOICE_ID || 'nova',
   },
   video: {
     tempDir: process.env.VIDEO_TEMP_DIR || './temp',

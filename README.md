@@ -7,6 +7,8 @@ AI-powered tool to automatically detect highlights from long-form sports videos 
 - 🔍 **YouTube Search**: Find World Cup matches and sports videos
 - 🤖 **AI Highlight Detection**: Uses OpenAI Vision to identify exciting moments
 - ✂️ **Automated Video Processing**: Extracts highlights and creates Shorts (9:16 format)
+- 🎙️ **AI Voice-Over**: Generates dynamic commentary for each highlight using TTS
+- 📝 **Auto Captions**: Creates stylized subtitles that appear during key moments
 - 📤 **YouTube Upload**: Automatically upload created Shorts to your channel
 - 🎯 **Smart Tagging**: Auto-generates titles, descriptions, and tags for maximum reach
 
@@ -97,8 +99,9 @@ Runs with auto-reload on file changes.
 5. **Format**: Converts to YouTube Shorts format (9:16 aspect ratio)
 6. **Upload**: Publishes to your YouTube channel with optimized metadata
 
-## AI Detection
+## AI Detection & Enhancement
 
+### Highlight Detection
 The system uses OpenAI's Vision model to analyze video frames and identify:
 - Goals and near-misses
 - Impressive saves
@@ -108,6 +111,20 @@ The system uses OpenAI's Vision model to analyze video frames and identify:
 - Intense action sequences
 
 Sensitivity can be adjusted via `HIGHLIGHT_SENSITIVITY` in `.env` (0.0-1.0).
+
+### Voice-Over Commentary
+- Generates dynamic AI commentary for each highlight using TTS
+- Creates exciting, context-aware narration
+- Supports multiple voice options (nova, echo, fable, onyx, shimmer, alloy)
+- Auto-generates phrases based on highlight type
+- Max 30 seconds of commentary per clip
+
+### Dynamic Captions
+- Automatically generates emoji-rich captions for each moment
+- Type-specific captions: ⚽ GOAL!, 🧤 SAVE!, 🔴 RED CARD!, etc.
+- Styled with black backgrounds for readability on any video
+- Proper SRT/VTT format for YouTube compatibility
+- Captions sync with voice-over and video action
 
 ## Directory Structure
 
